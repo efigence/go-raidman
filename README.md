@@ -1,3 +1,5 @@
+[![godoc](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/efigence/go-raidman)
+
 Raidman
 =======
 
@@ -7,7 +9,7 @@ Go Riemann client
 package main
 
 import (
-        "github.com/amir/raidman"
+        "github.com/efigence/go-raidman"
 )
 
 func main() {
@@ -29,7 +31,7 @@ func main() {
         if err != nil {
                 panic(err)
         }
-        
+
         // send multiple events at once
         err = c.SendMulti([]*raidman.Event{
                 &raidman.Event{
